@@ -7,7 +7,7 @@ body{
 .header{
     background-color: #252525;
     border-bottom-right-radius: 100px;
-    height: 60vh;
+    /* height: 60vh; */
 }
 .header-block{
     display: flex;
@@ -15,6 +15,9 @@ body{
     align-items: center;
     gap: 50px;
     height: 100%;
+}
+.header-image{
+    padding: 30px 0px 55px 10px;
 }
 .header-image img{
     width: 540px;
@@ -26,13 +29,14 @@ body{
 .head-text{
     font-size: 60px;
     font-weight: 700;
+    padding-right: 10px;
 }
 .text-description{
     font-size: 26px;
     margin-top: 10px;
 }
 .header-button{
-    margin-top: 30px;
+    margin: 30px 0px 40px;
 }
 .header-button-1{
     border: 2px solid #000;
@@ -160,8 +164,15 @@ body{
     .footer-button{
         gap: 15px;
     }
-}
-@media(max-width:1000px){
+    .footer{
+        height: auto;
+    }
+    .footer-head{
+        padding-top: 25px;
+    }
+    .footer-button{
+        margin: 20px 0px 40px;
+    }
     .footer-button{
         flex-direction: column;
         align-items: center;
@@ -182,12 +193,16 @@ body{
     }
     .header-button{
         display: flex;
+        margin: 15px 0px 65px;
     }
     .header-button-2{
         margin: 0px 10px;
     }
 }
 @media(max-width:500px){
+    .header{
+        height: auto;
+    }
     .header-block{
         flex-direction: column;
     }
@@ -196,6 +211,19 @@ body{
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    .header-button{
+        margin-bottom: 40px;
+    }
+    .header-image{
+        margin: 0px;
+        padding: 10px 10px 0px;
+    }
+    .footer-head{
+        padding-top: 60px;
+    }
+    .text-description{
+        padding: 0px 10px;
     }
 }
 @media(max-width:420px){
@@ -216,5 +244,8 @@ body{
     .button-network{
         gap: 10px;
         padding: 30px 20px;
+    }
+    .header-button{
+        margin-bottom: 60px;
     }
 }
